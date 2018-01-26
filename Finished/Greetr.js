@@ -20,12 +20,22 @@
         es: 'Saludos',
         fn: 'Bonjour'
     };
+
     // messages to logged in the console
-    var logMessages = {
+    var logInMessages = {
         en: 'Logged in',
         es: 'Inició sesión',
         fn: 'Connecte'
     };
+
+    // messages for logging out in the console
+
+    var logOutMessages = {
+        en: 'Logged out',
+        es: 'Desconectado',
+        fn: 'Deconnecte'
+    }
+
 
     // container for methods to save memory
     Greetr.prototype = {
@@ -71,9 +81,17 @@
             return this;
         },
 
-        log: function() {
+        logIn: function() {
             if (console) {
-                console.log(logMessages[this.language] + ': ' + this.fullName());
+                console.log(logInMessages[this.language] + ': ' + this.fullName());
+            }
+
+            return this;
+        },
+
+        logOut: function() {
+            if (console) {
+                console.log(logOutMessages[this.language] + ': ' + this.fullName());
             }
 
             return this;
