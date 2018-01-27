@@ -1,20 +1,23 @@
 <html>
-    <head>
+    <header>
     <link rel="stylesheet" href="app.css">
-    </head>
+    <nav>
+      <section id="logindiv">
+          <select id="lang">
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+              <option value="fn">French</option>
+          </select>
+          <input type="button" value="Login" id="login" />
+      </section>
+      <section id="logoutdiv">
+        <input type="button" value="Logout" id="logout">
+      </section>
+      <p id='greeting'></p>
+    </nav>
+  </header>
     <body>
-        <div id="logindiv">
-            <select id="lang">
-                <option value="en">English</option>
-                <option value="es">Spanish</option>
-                <option value="fn">French</option>
-            </select>
-            <input type="button" value="Login" id="login" />
-        </div>
-        <div id="logoutdiv">
-          <input type="button" value="Logout" id="logout">
-        </div>
-        <h1 id='greeting'></h1>
+
         <script src="jquery-1.11.2.js"></script>
         <script src="Message.js"></script>
         <script src="app.js"></script>
