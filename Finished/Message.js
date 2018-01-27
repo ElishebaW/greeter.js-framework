@@ -1,7 +1,7 @@
 (function(global, $) {
     // 'new' an object
-    var Greetr = function(firstName, lastName, language) {
-        return new Greetr.init(firstName, lastName, language);
+    var Message = function(firstName, lastName, language) {
+        return new Message.init(firstName, lastName, language);
     }
 
     // hidden within the scope of the IIFE and never directly accessibles
@@ -38,7 +38,7 @@
 
 
     // container for methods to save memory
-    Greetr.prototype = {
+    Message.prototype = {
       //the calling object at runtime
         fullName: function() {
             return this.firstName + ' ' + this.lastName;
@@ -130,7 +130,7 @@
 
     };
     // actual object is created here which allows us not to use 'new' each time
-    Greetr.init = function(firstName, lastName, language) {
+    Message.init = function(firstName, lastName, language) {
 
        var self = this;
         self.firstName = firstName || '';
@@ -141,8 +141,8 @@
     }
 
    //trick borrowed from jquery so we don't have to use new
-    Greetr.init.prototype = Greetr.prototype;
+    Message.init.prototype = Message.prototype;
 
-    global.Greetr = global.G$ = Greetr;
+    global.Message = global.G$ = Message;
 
 }(window, jQuery));
