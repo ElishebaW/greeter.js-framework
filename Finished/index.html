@@ -1,22 +1,27 @@
 <html>
     <header>
     <link rel="stylesheet" href="app.css">
-    <nav>
-      <section id="logindiv">
-          <select id="lang">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <nav class="navbar navbar-default">
+      <section class="container-fluid" id="logindiv">
+          <select class="navbar-toggle collapsed" id="lang">
               <option value="en">English</option>
               <option value="es">Spanish</option>
               <option value="fn">French</option>
           </select>
-          <input type="button" value="Login" id="login" />
+          <input  type="button" value="Login" id="login" />
       </section>
       <section id="logoutdiv">
         <input type="button" value="Logout" id="logout">
       </section>
-      <p id='greeting'></p>
     </nav>
   </header>
     <body>
+      <section class=
+      "greeting">
+        <p id='greeting'></p>
+      </section>
+
 
         <script src="jquery-1.11.2.js"></script>
         <script src="Message.js"></script>
