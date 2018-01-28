@@ -1,3 +1,13 @@
-#logoutdiv {
+#logoutdiv, .jumbotron, .form-inline{
     visibility: hidden;
+}
+
+#jokes {
+    text-align: center;
+}
+
+/*form*/
+
+#setup,#climax, #punchline {
+    padding:30px;
 }

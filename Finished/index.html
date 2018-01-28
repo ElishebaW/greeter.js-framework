@@ -1,10 +1,11 @@
 <html>
     <header>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <nav class="navbar navbar-default">
       <section class="container-fluid" id="logindiv">
-          <select class="navbar-toggle collapsed" id="lang">
+          <select id="lang">
               <option value="en">English</option>
               <option value="es">Spanish</option>
               <option value="fn">French</option>
@@ -17,14 +18,27 @@
     </nav>
   </header>
     <body>
+      <section id='body'>
       <section class=
       "greeting">
         <p id='greeting'></p>
       </section>
-
-
+      <section class='jumbotron' id='jokes'>
+        <h1 id='jokeintro'></h1>
+        <h2 id='jokeinstructions'></h2>
+      </section>
+      <section class="form-inline">
+        <section class="form-group">
+          <label class="col-lg-4 control-label" id="jokesetup"></label>
+          <input type="text" class="form-control" placeholder="Insert setup text..."/>
+          <label class="col-lg-4 control-label" id="jokeclimax"></label>
+          <input type="text" class="form-control"  placeholder="Insert climax text..."/>
+          <label class="col-lg-4 control-label" id="jokepunchline"></label>
+          <input type="text" class="form-control"  placeholder="Insert punchline text..."/>
+      </section>
         <script src="jquery-1.11.2.js"></script>
         <script src="Message.js"></script>
+        <script src="Jokes.js"></script>
         <script src="app.js"></script>
     </body>
 </html>
