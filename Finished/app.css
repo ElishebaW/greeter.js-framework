@@ -8,6 +8,10 @@
 
 /*form*/
 
-#setup,#climax, #punchline {
-    padding:30px;
+.form-group {
+    padding: 20px;
+}
+
+.form-control {
+  margin: 30px;
 }

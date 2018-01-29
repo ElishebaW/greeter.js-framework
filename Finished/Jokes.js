@@ -23,39 +23,21 @@
   }
 
   var setups = {
-    en: 'Setup',
-    es: 'Preparar',
-    fn: 'Instaurer'
+    en: 'Setup - Insert the setup to your joke below',
+    es: 'Preparar - Inserta la configuración a tu broma a continuación',
+    fn: 'Instaurer - Insérez la configuration à votre blague ci-dessous'
   }
 
   var climaxs = {
-    en: 'Climax',
-    es: 'El punto culminante',
-    fn: 'Le point culminant'
+    en: 'Climax - Insert the climax to your joke below',
+    es: 'El punto culminante - Inserta el clímax de tu broma a continuación',
+    fn: 'Le point culminant - Insérez le point culminant de votre blague ci-dessous'
   }
 
   var punchlines = {
-    en: 'Punchline',
-    es: 'La frase clave',
-    fn: 'Le trait final'
-  }
-
-  var setupInsertTexts = {
-    en: 'Insert setup text...',
-    es: 'Insertar texto configuración...',
-    fn: 'Insérer le texte de configuration ...'
-  }
-
-  var climaxInsertTexts = {
-    en: 'Insert climax text...',
-    es: 'Insertar texto climax...',
-    fn: 'Insertar texto climax...'
-  }
-
-  var punchlineInsertTexts = {
-    en: 'Insert punchline text...',
-    es: 'Insertar texto de frase clave...',
-    fn: 'Insérer un texte trait final....'
+    en: 'Punchline - Insert the punchline that will get the biggest laugh!',
+    es: 'La frase clave - ¡Inserta el punchline que causará la risa más grande!',
+    fn: 'Le trait final - Insérez la punchline qui fera le plus rire!'
   }
 
  Jokes.prototype = {
@@ -92,18 +74,6 @@
 
   punchline: function(){
     return punchlines[this.language];
-  },
-
-  setupInsertText: function(){
-    return setupInsertTexts[this.setupInsertTexts];
-  },
-
-  climaxInsertText: function(){
-    return climaxInsertTexts[this.climaxInsertTexts];
-  },
-
-  punchlineInsertText: function(){
-    return punchlineInsertTexts[this.punchlineInsertTexts];
   },
 
   HTMLIntro: function(selector, intro){
@@ -200,60 +170,6 @@
     $(selector).html(punchlinejoke);
     return this;
   },
-
-  HTMLSetupInsertText: function(selector, setupinserttext) {
-    if (!$){
-      throw 'jQuery not loaded'
-    }
-
-    if (!selector) {
-      throw 'Missing jQuery Selector'
-    }
-
-    var setupinserttext;
-    if (setupinserttext){
-      setupinserttext = this.setupInsertText();
-    }
-
-    $(selector).html(setupinserttext);
-    return this;
-  },
-
-  HTMLClimaxInsertText: function(selector, climaxinserttext) {
-    if (!$){
-      throw 'jQuery not loaded'
-    }
-
-    if (!selector) {
-      throw 'Missing jQuery Selector'
-    }
-
-    var climaxinserttext;
-    if (climaxinserttext) {
-      climaxinserttext = this.climaxInsertText();
-    }
-
-    $(selector).html(climaxinserttext);
-    return this;
-  },
-
-  HTMLPunchlineInsertText: function(selector, punchlineinserttext) {
-    if (!$){
-      throw 'jQuery not loaded'
-    }
-
-    if (!selector) {
-      throw 'Missing jQuery Selector'
-    }
-
-    var punchlineinserttext;
-    if (punchlineinserttext) {
-      punchlineinserttext = this.punchlineInsertText();
-    }
-
-    $(selector).html(punchlineinserttext);
-    return this;
-  }
 };
 
 

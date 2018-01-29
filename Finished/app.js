@@ -22,9 +22,15 @@ g.greet().setLang('es').greet(true).logIn();
   setSetup.setLang($('#lang').val()).HTMLSetup('#jokesetup',true);
   setClimax.setLang($('#lang').val()).HTMLClimax('#jokeclimax',true);
   setPunchline.setLang($('#lang').val()).HTMLPunchline('#jokepunchline',true);
-  setSetupInsertText.setLang($('#lang').val()).HTMLSetupInsertText('#jokesetupinserttext',true);
-  setClimaxInsertText.setLang($('#lang').val()).HTMLClimaxInsertText('#jokepunchline',true);
-  setPunchlineInsertText.setLang($('#lang').val()).HTMLPunchlineInsertText('#jokepunchline',true);
+
+   if (setSetupInsertText.setLang($('#lang').val()) === 'en')
+   {
+    ('#jokesetupinput').attr('placeholder','Insert punchline text...')
+   }
+
+
+
+
 
   loginGrtr.setLang($('#lang').val()).HTMLGreeting('#greeting',true).logIn();
   setTimeout(function(){
