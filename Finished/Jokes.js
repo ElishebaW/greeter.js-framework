@@ -40,6 +40,12 @@
     fn: 'Le trait final - Insérez la punchline qui fera le plus rire!'
   }
 
+  var jokeoutputs = {
+    en: "Here/'s/ your joke",
+    es: "¡Aquí está tu chiste!",
+    fn: 'Voici ta blague!'
+  }
+
  Jokes.prototype = {
    validate: function() {
      if(supportedLangs.indexOf(this.language) === -1){
@@ -47,35 +53,39 @@
      }
    },
 
-   setLang: function(lang){
+   setLang: function(lang) {
       this.language = lang;
       this.validate();
       return this;
    },
 
    //pulling in the text for the intros
-  intro: function(){
+  intro: function() {
   return intros[this.language];
   },
 
   //pulling in the text for the instructions
 
-  instruction: function(){
+  instruction: function() {
     return instructions[this.language];
   },
 
-  setup: function(){
+  setup: function() {
     return setups[this.language];
   },
 
-  climax: function(){
+  climax: function() {
     return climaxs[this.language];
   },
 
-  punchline: function(){
+  punchline: function() {
     return punchlines[this.language];
   },
 
+  jokeoutput: function(){
+    return jokeoutputs[this.language];
+  },
+  
   HTMLIntro: function(selector, intro){
     if (!$) {
       throw 'jQuery not loaded'
@@ -170,6 +180,25 @@
     $(selector).html(punchlinejoke);
     return this;
   },
+
+  HTMLJokeOutput: function(selector, jokeoutput) {
+    if (!$){
+      throw 'jQuery not loaded'
+    }
+
+    if (!selector) {
+      throw 'Missing jQuery Selector'
+    }
+
+    var jokeoutput;
+    if (jokeoutput) {
+      jokeoutput = this.jokeoutput();
+    }
+
+    $(selector).html(jokeoutput);
+    return this
+
+  }
 };
 
 

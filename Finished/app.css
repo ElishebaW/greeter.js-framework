@@ -12,6 +12,7 @@
     padding: 20px;
 }
 
-.form-control {
-  margin: 30px;
+.joke-output {
+  border: 1px solid green;
+  padding: 100px;
 }

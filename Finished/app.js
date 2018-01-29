@@ -9,9 +9,7 @@ g.greet().setLang('es').greet(true).logIn();
     var setSetup = J$();
     var setClimax = J$();
     var setPunchline = J$();
-    var setSetupInsertText = J$();
-    var setClimaxInsertText = J$();
-    var setPunchlineInsertText = J$();
+    var setJokeOutput = J$();
 
   $('#logindiv').hide();
   $('#logoutdiv').css("visibility","visible");
@@ -22,21 +20,13 @@ g.greet().setLang('es').greet(true).logIn();
   setSetup.setLang($('#lang').val()).HTMLSetup('#jokesetup',true);
   setClimax.setLang($('#lang').val()).HTMLClimax('#jokeclimax',true);
   setPunchline.setLang($('#lang').val()).HTMLPunchline('#jokepunchline',true);
-
-   if (setSetupInsertText.setLang($('#lang').val()) === 'en')
-   {
-    ('#jokesetupinput').attr('placeholder','Insert punchline text...')
-   }
-
-
-
-
+  setJokeOutput.setLang($('#lang').val()).HTMLJokeOutput('#jokeoutput',true);
 
   loginGrtr.setLang($('#lang').val()).HTMLGreeting('#greeting',true).logIn();
-  setTimeout(function(){
-    $("#greeting").hide()}, 1000)
-   $('#greeting').css("display","block");
- })
+    setTimeout(function(){
+      $("#greeting").hide()}, 1000)
+     $('#greeting').css("display","block");
+   })
 
 $('#logout').click(function() {
   var logOut = G$('John', 'Doe')
