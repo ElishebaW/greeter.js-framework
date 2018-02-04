@@ -41,7 +41,7 @@
   }
 
   var jokeoutputs = {
-    en: "Here/'s/ your joke",
+    en: "Here is your joke!",
     es: "¡Aquí está tu chiste!",
     fn: 'Voici ta blague!'
   }
@@ -85,7 +85,7 @@
   jokeoutput: function(){
     return jokeoutputs[this.language];
   },
-  
+
   HTMLIntro: function(selector, intro){
     if (!$) {
       throw 'jQuery not loaded'
