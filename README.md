@@ -19,7 +19,7 @@ The app works by allowing first allowing the user to select the language using a
 
 ## Author
 
-* **Elisheba Wiggins** - *Initial work*
+* **Elisheba Wiggins** 
 
 
 ## License
