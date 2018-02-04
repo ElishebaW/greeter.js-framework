@@ -10,16 +10,16 @@
 
   //the welcomes to the generator
   var intros = {
-      en: 'Welcome to the Joke Generator',
-      es: 'Bienvenido a la Joke Generator',
-      fn: 'Bienvenue a la Joke Generator'
+      en: 'Welcome to the Joke Compiler',
+      es: 'Bienvenido a la Joke Compiler',
+      fn: 'Bienvenue a la Joke Compiler'
   };
 
 //instructions for how to use the generator
   var instructions = {
-      en: 'Use the joke generator form below to create your joke!',
-      es: '¡Usa el forma del generador de bromas crear tu broma!',
-      fn: 'Utilisez le forme générateur de blagues créer votre blague'
+      en: 'Use the joke compiler form below to create your joke!',
+      es: '¡Usa el forma del compilador de bromas crear tu broma!',
+      fn: 'Utilisez le forme compilateur de blagues créer votre blague'
   }
 
   var setups = {
