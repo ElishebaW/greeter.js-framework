@@ -1,56 +1,27 @@
-Project Title
-One Paragraph of project description goes here
+# Project Title
 
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Joke Compiler App
 
-Prerequisites
-What things you need to install the software and how to install them
 
-Give examples
-Installing
-A step by step series of examples that tell you have to get a development env running
+### Description
 
-Say what the step will be
+A joke creation app using a JavaScript library I developed that allows users to build a joke through an online form in english, spanish and french. The app uses HTML, CSS, JavaScript, and jQuery.
 
-Give the example
-And repeat
+The app works by allowing first allowing the user to select the language using a dropdown on the top of the page. From there the user is greeted in their language with the text of the website in that language. The user may now enter their joke configuration in the boxes on the form and submit to compile it into a joke for use at their next party, business lunch and more!
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+### Challenges or things learned while writing the app
 
-Running the tests
-Explain how to run the automated tests for this system
+1. I learned a great deal about AJAX and how jQuery works
+2. I ran into some trouble while getting the app to production, but quickly pushed through them.
+3. Having trouble with the responsive design of the application(planning on working through this)
+4. Pushed through issue of how to display the values of the input fields in one output field at  the bottom of the page. I looked up solutions on StackOverflow and implemented it in the application.
 
-Break down into end to end tests
-Explain what these tests test and why
 
-Give an example
-And coding style tests
-Explain what these tests test and why
+## Author
 
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
+* **Elisheba Wiggins** - *Initial work*
 
-Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
-Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+## License
 
-Authors
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
-
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-Acknowledgments
-Hat tip to anyone who's code was used
-Inspiration
-etc
+This project is licensed under the MIT License
