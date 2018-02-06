@@ -13,13 +13,13 @@ The app works by allowing first allowing the user to select the language using a
 
 1. I learned a great deal about AJAX and how jQuery works
 2. I ran into some trouble while getting the app to production, but quickly pushed through them.
-3. Having trouble with the responsive design of the application(planning on working through this)
-4. Pushed through issue of how to display the values of the input fields in one output field at  the bottom of the page. I looked up solutions on StackOverflow and implemented it in the application.
+3. Having trouble with the responsive design of the application but pushed through by reviewing options online
+4. Pushed through issue of how to display the values of the input fields in one output field at the bottom of the page. I looked up solutions on StackOverflow and implemented it in the application.
 
 
 ## Author
 
-* **Elisheba Wiggins** 
+* **Elisheba Wiggins**
 
 
 ## License

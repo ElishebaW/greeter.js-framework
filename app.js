@@ -34,5 +34,5 @@ $('#logout').click(function() {
 })
 
 $('#submit').click(function() {
-  document.getElementById('jokeoutputcontent').innerText = document.getElementById('jokesetupinput').value + ' ' + document.getElementById('jokeclimaxinput').value; ' ' + document.getElementById('jokepunchlineinput').value;
+  document.getElementById('jokeoutputcontent').innerText = document.getElementById('jokesetupinput').value + ' ' + document.getElementById('jokeclimaxinput').value+ ' ' + document.getElementById('jokepunchlineinput').value;
 })
