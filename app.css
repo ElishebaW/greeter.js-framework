@@ -1,6 +1,13 @@
+/*Hidden elements */
 #logoutdiv, .jumbotron, .form-inline{
     visibility: hidden;
 }
+
+/*Full page */
+#body {
+  background-color: #87BDBA;
+}
+
 
 #jokes {
     text-align: center;
